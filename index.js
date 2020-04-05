@@ -33,7 +33,7 @@ app.post('/upload',(req, res) =>{
             });
         }else{
             console.log(req.file);
-            res.send('test');
+            res.redirect('back')
         }
     });
 });
