@@ -6,9 +6,9 @@ const homeController = require('../controller/home_controller');
 console.log('router loaded');
 
 
+router.get('/', homeController.home);
 router.get('/upload', homeController.upload);
 
-router.get('/', homeController.home);
 // router.use('/users', require('./users'));
 
 // for any further routes, acce ss from here
